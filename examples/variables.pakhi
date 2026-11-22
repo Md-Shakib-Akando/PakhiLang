@@ -1,0 +1,19 @@
+hi pakhi
+  // dhoro pakhi = variable declare koro
+  dhoro pakhi naam = "Pakhi";
+  dhoro pakhi boyosh = 21;
+  dhoro pakhi bhalobashe = sotti;
+  dhoro pakhi ex = khali;
+
+  bolo pakhi "Naam:", naam;
+  bolo pakhi "Boyosh:", boyosh;
+  bolo pakhi "Bhalobashe?", bhalobashe;
+  bolo pakhi "Ex:", ex;
+
+  boyosh += 1;
+  bolo pakhi "Next year boyosh hobe", boyosh;
+
+  dhoro pakhi a = 10, b = 3;
+  bolo pakhi a + b, a - b, a * b, a / b, a % b, -a;
+  bolo pakhi "String jora: " + naam + " " + boyosh;
+bye pakhi

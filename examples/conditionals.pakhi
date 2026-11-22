@@ -1,0 +1,18 @@
+hi pakhi
+  dhoro pakhi mood = 75;
+
+  jodi pakhi (mood > 90) {
+    bolo pakhi "Pakhi khub khushi 😍";
+  } nahole jodi pakhi (mood > 50) {
+    bolo pakhi "Pakhi thik ache 🙂";
+  } nahole jodi pakhi (mood > 20) {
+    bolo pakhi "Pakhi rag korse 😤";
+  } nahole pakhi {
+    bolo pakhi "Pakhi block kore dise 💔";
+  }
+
+  dhoro pakhi gift = sotti, late = mittha;
+  jodi pakhi (gift && !late) {
+    bolo pakhi "Date successful!";
+  }
+bye pakhi

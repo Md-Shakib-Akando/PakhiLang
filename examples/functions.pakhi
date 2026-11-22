@@ -1,0 +1,31 @@
+hi pakhi
+  kaj pakhi jog(a, b) {
+    ferot dao pakhi a + b;
+  }
+  bolo pakhi "2 + 3 =", jog(2, 3);
+
+  // recursion
+  kaj pakhi fib(n) {
+    jodi pakhi (n < 2) ferot dao pakhi n;
+    ferot dao pakhi fib(n - 1) + fib(n - 2);
+  }
+  dhoro pakhi i = 0;
+  jotokkhon pakhi (i < 10) {
+    bolo pakhi "fib(" + i + ") =", fib(i);
+    i += 1;
+  }
+
+  // closures: function remembers the scope it was born in
+  kaj pakhi counterBanao() {
+    dhoro pakhi count = 0;
+    kaj pakhi barao() {
+      count += 1;
+      ferot dao pakhi count;
+    }
+    ferot dao pakhi barao;
+  }
+  dhoro pakhi missedCall = counterBanao();
+  missedCall();
+  missedCall();
+  bolo pakhi "Pakhi ke missed call:", missedCall();
+bye pakhi

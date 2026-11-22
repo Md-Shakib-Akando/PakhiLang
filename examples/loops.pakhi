@@ -1,0 +1,29 @@
+hi pakhi
+  // FizzBuzz, pakhi style
+  dhoro pakhi i = 0;
+  jotokkhon pakhi (i < 15) {
+    i += 1;
+
+    jodi pakhi (i % 15 == 0) {
+      bolo pakhi "PakhiBuzz";
+      porer ta pakhi;          // continue
+    }
+    jodi pakhi (i % 3 == 0) {
+      bolo pakhi "Pakhi";
+    } nahole jodi pakhi (i % 5 == 0) {
+      bolo pakhi "Buzz";
+    } nahole pakhi {
+      bolo pakhi i;
+    }
+  }
+
+  // break
+  dhoro pakhi msg = 0;
+  jotokkhon pakhi (sotti) {
+    msg += 1;
+    jodi pakhi (msg == 3) {
+      bolo pakhi "3 ta message seen, reply nai. Thamlam.";
+      thamo pakhi;             // break
+    }
+  }
+bye pakhi

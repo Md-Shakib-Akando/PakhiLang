@@ -1,0 +1,44 @@
+{
+  "name": "pakhilang",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PakhiLang - a toy programming language for the Bangladeshi pakhi lovers 🐦",
+  "type": "module",
+  "bin": {
+    "pakhi": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "build:lib": "esbuild src/lib/pakhilang/index.ts --bundle --platform=neutral --format=esm --outfile=dist/pakhilang.js && esbuild src/cli/index.ts --bundle --platform=node --format=esm --outfile=dist/cli.js",
+    "test": "npm run build:lib && node --test \"test/**/*.test.mjs\"",
+    "pakhi": "node dist/cli.js"
+  },
+  "keywords": [
+    "pakhilang",
+    "programming-language",
+    "interpreter",
+    "toy-language",
+    "bangla",
+    "banglish",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.25.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.6.0"
+  }
+}

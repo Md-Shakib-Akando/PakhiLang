@@ -1,0 +1,22 @@
+Ekta chhoto premer chithi, PakhiLang e lekha.
+
+hi pakhi
+  dhoro pakhi naam = "Pakhi";
+  dhoro pakhi din = 1;
+
+  kaj pakhi chithi(din) {
+    jodi pakhi (din == 1) ferot dao pakhi "Prothom dekhay-i bhalo lege gelo.";
+    jodi pakhi (din == 2) ferot dao pakhi "Tomar 'seen' dekhe rat ghum hoy na.";
+    jodi pakhi (din == 3) ferot dao pakhi "Fuchka khawabo, ashba?";
+    ferot dao pakhi khali;
+  }
+
+  bolo pakhi "Priyo " + naam + ",";
+  jotokkhon pakhi (sotti) {
+    dhoro pakhi line = chithi(din);
+    jodi pakhi (line == khali) thamo pakhi;
+    bolo pakhi "  Din " + din + ": " + line;
+    din += 1;
+  }
+  bolo pakhi "Iti, tomar programmer 🐦";
+bye pakhi
