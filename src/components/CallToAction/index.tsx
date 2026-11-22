@@ -1,4 +1,5 @@
 import Icon from "@/components/Icon";
+import Logo from "@/components/Logo";
 import { CONTAINER, GRADIENT_TEXT_ANIMATED, SECTION, button, cn, reveal } from "@/lib/ui";
 
 export default function CallToAction() {
@@ -15,12 +16,10 @@ export default function CallToAction() {
           </div>
 
           <div className="relative overflow-hidden rounded-[23px] bg-elevated bg-[radial-gradient(500px_260px_at_50%_0%,rgba(255,95,162,0.22),transparent_70%),radial-gradient(500px_260px_at_50%_100%,rgba(139,156,255,0.14),transparent_70%)] px-5 py-12 text-center sm:px-8 sm:py-[72px]">
-            <span
-              aria-hidden="true"
-              className="inline-grid size-16 animate-float place-items-center rounded-[18px] border border-line-strong bg-white/5 text-[32px] shadow-[0_10px_40px_-10px_rgba(255,95,162,0.5)]"
-            >
-              🐦
-            </span>
+            <Logo
+              size={64}
+              className="mx-auto animate-float drop-shadow-[0_14px_30px_rgba(255,95,162,0.45)]"
+            />
             <h2 className="mt-6 text-[clamp(28px,4vw,42px)] leading-[1.15] font-bold tracking-[-0.03em] text-balance">
               Pakhi wait kortese.
               <br />

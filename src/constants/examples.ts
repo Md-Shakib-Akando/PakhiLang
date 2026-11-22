@@ -5,7 +5,7 @@ export interface Example {
 }
 
 /** Name of the example the playground opens with. */
-export const DEFAULT_EXAMPLE = "Kaj (functions)";
+export const DEFAULT_EXAMPLE = "Hello pakhi";
 
 export const EXAMPLES: Example[] = [
   {

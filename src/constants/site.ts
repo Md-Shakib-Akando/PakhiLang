@@ -6,6 +6,11 @@ export const SITE = {
     "PakhiLang is a tiny, friendly programming language written in Banglish. Write code that reads like a love letter, and learn how a real tokenizer, parser and interpreter work along the way.",
 } as const;
 
+export const AUTHOR = {
+  name: "Shakib Akando",
+  github: "https://github.com/Md-Shakib-Akando",
+} as const;
+
 export const NAV_LINKS = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "Kivabe kaj kore" },

@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import { NAV_LINKS, SITE } from "@/constants/site";
 import { CONTAINER, button, cn } from "@/lib/ui";
 
@@ -6,16 +7,12 @@ export default function Navbar() {
     <header className="nav-scroll sticky top-0 z-50 h-16 border-b backdrop-blur-md backdrop-saturate-150">
       <div className={cn(CONTAINER, "flex h-full items-center justify-between gap-8")}>
         <a href="#top" className="group flex items-center gap-2.5" aria-label={`${SITE.name} home`}>
-          <span
-            aria-hidden="true"
-            className="grid size-8 place-items-center rounded-[9px] transition duration-300 group-hover:-rotate-12 group-hover:scale-110 border border-pink/30 bg-linear-140 from-pink/25 to-periwinkle/20 text-[17px]"
-          >
-            🐦
-          </span>
+          <Logo
+            size={32}
+            className="shrink-0 drop-shadow-[0_6px_16px_rgba(255,95,162,0.35)] transition duration-300 group-hover:-rotate-12 group-hover:scale-110"
+          />
           <span className="text-[17px] font-bold tracking-[-0.02em]">{SITE.name}</span>
-          <span className="rounded-full border border-line-strong px-[7px] py-0.5 text-[11px] font-medium text-muted max-[400px]:hidden">
-            v{SITE.version}
-          </span>
+          
         </a>
 
         <nav className="ml-auto hidden gap-7 md:flex" aria-label="Main">

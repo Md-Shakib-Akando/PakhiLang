@@ -115,7 +115,7 @@ export default function Playground() {
         >
           {/* ---- toolbar ---- */}
           <div className="flex min-h-[58px] flex-wrap items-center gap-2.5 border-b border-line bg-white/[0.02] px-3 py-2.5 sm:flex-nowrap sm:gap-4 sm:pr-3.5 sm:pl-[18px]">
-            <WindowDots muted className="max-sm:hidden" />
+            <WindowDots className="max-sm:hidden" />
             <label className="relative inline-block max-sm:w-full">
               <span className="sr-only">Example</span>
               <select

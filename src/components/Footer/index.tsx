@@ -1,4 +1,5 @@
-import { NAV_LINKS, SITE } from "@/constants/site";
+import Logo from "@/components/Logo";
+import { AUTHOR, NAV_LINKS, SITE } from "@/constants/site";
 import { CONTAINER, cn } from "@/lib/ui";
 
 const RESOURCES = [
@@ -14,8 +15,9 @@ export default function Footer() {
     <footer className="mt-20 border-t border-line bg-white/[0.01] md:mt-28">
       <div className={cn(CONTAINER, "grid grid-cols-2 gap-8 pt-14 pb-12 md:grid-cols-[2fr_1fr_1fr] md:gap-12")}>
         <div className="col-span-2 md:col-span-1">
-          <div className="text-lg font-bold tracking-[-0.02em]">
-            <span aria-hidden="true">🐦</span> {SITE.name}
+          <div className="flex items-center gap-2.5 text-lg font-bold tracking-[-0.02em]">
+            <Logo size={28} />
+            {SITE.name}
           </div>
           <p className="mt-3 max-w-[340px] text-sm text-muted">
             Ekta toy programming language, pakhi ke bhalobeshe banano. Tokenizer, parser ar interpreter shob
@@ -58,7 +60,15 @@ export default function Footer() {
       <div className={CONTAINER}>
         <div className="flex flex-wrap justify-between gap-2 border-t border-line pt-5 pb-7 text-[13px] text-faint">
           <span>
-            © {new Date().getFullYear()} {SITE.name} · v{SITE.version} · MIT License
+            {SITE.name} made by{" "}
+            <a
+              href={AUTHOR.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-muted underline decoration-pink/40 underline-offset-4 transition-colors hover:text-pink hover:decoration-pink"
+            >
+              {AUTHOR.name}
+            </a>
           </span>
           <span>Made with 💗 for every pakhi</span>
         </div>

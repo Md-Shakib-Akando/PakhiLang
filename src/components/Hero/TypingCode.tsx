@@ -106,12 +106,12 @@ export default function TypingCode({ fileName, code, output }: Props) {
       {/* The full code is rendered invisibly underneath so the window never changes size */}
       <div className="relative">
         <span className="sr-only">{code}</span>
-        <pre aria-hidden="true" className="invisible overflow-x-auto px-4 py-4 text-xs leading-[1.7] sm:px-[22px] sm:py-5 sm:text-[13px]">
+        <pre aria-hidden="true" className="scrollbar-code invisible overflow-x-auto px-4 py-4 text-xs leading-[1.7] sm:px-[22px] sm:py-5 sm:text-[13px]">
           {code}
         </pre>
         <pre
           aria-hidden="true"
-          className="absolute inset-0 overflow-x-auto px-4 py-4 text-xs leading-[1.7] sm:px-[22px] sm:py-5 sm:text-[13px]"
+          className="scrollbar-code absolute inset-0 overflow-x-auto px-4 py-4 text-xs leading-[1.7] sm:px-[22px] sm:py-5 sm:text-[13px]"
         >
           {sliceSegments(segments, typed).map((segment, i) => (
             <span key={i} className={KIND_CLASSES[segment.kind] || undefined}>
